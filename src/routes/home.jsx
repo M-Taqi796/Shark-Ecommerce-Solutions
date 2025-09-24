@@ -1,4 +1,5 @@
 import Features from "../components/Features/features.component"
+import Founder from "../components/Founder/founder.component"
 import Header from "../components/Header/header.component"
 
 const Home =() => {
@@ -6,6 +7,7 @@ const Home =() => {
         <section>
             <Header />
             <Features />
+            <Founder />
         </section>
     )
 }
