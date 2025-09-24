@@ -4,7 +4,7 @@ import About from "./routes/about"
 import Services from "./routes/services"
 import Contact from "./routes/contact"
 import CaseStudy from "./routes/caseStudy"
-import NavBar from "./components/NavBar/NavBar.component"
+import NavBar from "./components/NavBar/navBar.component"
 
 function App() {
   return (
