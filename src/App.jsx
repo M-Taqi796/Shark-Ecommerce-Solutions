@@ -5,6 +5,7 @@ import Services from "./routes/services"
 import Contact from "./routes/contact"
 import CaseStudy from "./routes/caseStudy"
 import NavBar from "./components/NavBar/navBar.component"
+import Footer from "./components/Footer/Footer.component"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/case-study" element={<CaseStudy />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   )
