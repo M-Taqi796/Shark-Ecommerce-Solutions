@@ -1,7 +1,7 @@
 const MeetingCard = () => {
     return (
-        <section className="bg-secondary p-6 flex items-center gap-14 mb-20 mx-36 rounded-3xl">
-            <img className="rounded-2xl  hover:scale-105 transition-transform duration-300" src="meeting.webp" alt="" />
+        <section className="bg-secondary p-6 flex items-center gap-14 mb-20 mx-36 rounded-3xl hover:scale-105 transition-transform duration-300">
+            <img className="rounded-2xl" src="meeting.webp" alt="" />
             <article className="text-center">
                 <h2 className="text-lg text-fontWhite font-bold mb-3">Schedule a meeting</h2>
                 <p className="text-fontWhite text-md mb-3">We are more than happy to discuss and provide solutions to your problems</p>
