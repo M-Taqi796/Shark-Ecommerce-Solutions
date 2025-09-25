@@ -1,4 +1,5 @@
 import Blog from "../components/Blog/blog.component"
+import ContactCard from "../components/ContactCard/ContactCard.component"
 import Features from "../components/Features/features.component"
 import Founder from "../components/Founder/founder.component"
 import Header from "../components/Header/header.component"
@@ -14,6 +15,7 @@ const Home =() => {
             <Blog />
             <Services />
             <MeetingCard />
+            <ContactCard />
         </section>
     )
 }
