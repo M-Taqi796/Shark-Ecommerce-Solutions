@@ -1,7 +1,9 @@
+import HeaderSecondry from "../components/HeaderSecondry/headerSecondry.component"
+
 const Services =() => {
     return (
         <section>
-            I am Services
+            <HeaderSecondry />
         </section>
     )
 }
