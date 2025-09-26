@@ -5,6 +5,7 @@ import Founder from "../components/Founder/founder.component"
 import Header from "../components/Header/header.component"
 import MeetingCard from "../components/MeetingCard/meetingCard.component"
 import Services from "../components/Services/services.component"
+import Testimonials from "../components/Testimonials/testimonials.component"
 
 const Home =() => {
     return (
@@ -15,6 +16,7 @@ const Home =() => {
             <Blog />
             <Services />
             <MeetingCard />
+            <Testimonials />
             <ContactCard />
         </section>
     )
