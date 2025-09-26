@@ -14,3 +14,7 @@
   --color-backgroundSecondary: #0B0500;
   --color-fontWhite: #FBFEFB;
 }
+
+body{
+  background-color: var(--color-background);
+}

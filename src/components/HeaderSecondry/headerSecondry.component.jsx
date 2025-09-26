@@ -1,6 +1,6 @@
 const HeaderSecondry = () => {
   return (
-    <header className="mx-40 mb-20 flex justify-between items-center">
+    <header className="mx-40 mb-20 flex justify-between items-center mt-20">
       <article>
         <h1 className="text-xl">
           Turning Amazon Clicks Into <br />
