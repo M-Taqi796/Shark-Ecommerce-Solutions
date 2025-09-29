@@ -14,3 +14,13 @@
   --color-backgroundSecondary: #0B0500;
   --color-fontWhite: #FBFEFB;
 }
+
+body{
+  background-color: var(--color-background);
+}
+
+#nprogress .bar {
+  /* background: linear-gradient(90deg, #628B48, #ECA72C) !important; */
+  background: #628B48 !important;
+  height: 6px !important;
+}
