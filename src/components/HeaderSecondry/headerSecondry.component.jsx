@@ -1,7 +1,7 @@
 const HeaderSecondry = () => {
   return (
     <header className="mx-40 mb-20 flex justify-between items-center mt-20">
-      <article>
+      <article className="flex flex-col gap-4">
         <h1 className="text-xl">
           Turning Amazon Clicks Into <br />
           <span className="text-secondary">Consistent</span>{" "}
