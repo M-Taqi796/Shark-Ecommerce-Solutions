@@ -1,7 +1,11 @@
+import ContactForm from "../components/ContactForm/contactForm.component"
+import MeetingCard from "../components/MeetingCard/meetingCard.component"
+
 const Contact =() => {
     return (
         <section>
-            I am Contact
+            <ContactForm/>
+            <MeetingCard/>
         </section>
     )
 }
