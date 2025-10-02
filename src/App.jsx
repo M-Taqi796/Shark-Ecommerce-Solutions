@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar/navBar.component"
 import Footer from "./components/Footer/footer.component"
 import LoadingBar from "./components/LoadingBar/loadingBar.component"
 import Audit from "./routes/audit"
+import Meeting from "./routes/meeting"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/case-study" element={<CaseStudy />} />
           <Route path="/audit" element={<Audit />} />
+          <Route path="/meeting" element={<Meeting />} />
         </Routes>
         <Footer />
       </Router>

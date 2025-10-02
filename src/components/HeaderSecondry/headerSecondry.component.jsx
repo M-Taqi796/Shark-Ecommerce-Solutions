@@ -1,7 +1,7 @@
 const HeaderSecondry = () => {
   return (
     <header className="mx-40 mb-20 flex justify-between items-center mt-20">
-      <article className="flex flex-col gap-4">
+      <article className="flex flex-col gap-4 w-[50%]">
         <h1 className="text-xl">
           Turning Amazon Clicks Into <br />
           <span className="text-secondary">Consistent</span>{" "}
@@ -17,7 +17,7 @@ const HeaderSecondry = () => {
         </button>
         </div>
       </article>
-      <img className="w-[37.5] rounded-tr-[6.25rem] rounded-bl-[6.25rem] rounded-tl-3xl rounded-br-3xl" src="meeting.png" alt="" />
+      <img className="w-[50%] rounded-tr-[6.25rem] rounded-bl-[6.25rem] rounded-tl-3xl rounded-br-3xl" src="meeting.png" alt="" />
     </header>
   );
 };
