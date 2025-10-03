@@ -1,12 +1,12 @@
-import ContactForm from "../components/ContactForm/contactForm.component"
+import AuditForm from "../components/AuditForm/auditForm.component"
 import MeetingCard from "../components/MeetingCard/meetingCard.component"
 
-const Contact =() => {
+const Audit = () => {
     return (
         <section>
-            <ContactForm/>
+            <AuditForm/>
             <MeetingCard/>
         </section>
     )
 }
-export default Contact
+export default Audit
