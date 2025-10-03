@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const MeetingCard = () => {
     return (
-        <motion.div initial={{y:100, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1}}>
+        <motion.div initial={{y:100, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1, delay:0.5}}>
             <section className="bg-secondary p-6 flex items-center gap-14 mb-20 mx-36 rounded-3xl hover:scale-105 transition-transform duration-300">
                 <img className="rounded-2xl" src="meeting.webp" alt="" />
                 <article className="text-center">

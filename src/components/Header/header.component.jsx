@@ -1,8 +1,12 @@
 import Stats from "./core/stats.component";
+/* eslint-disable no-unused-vars */
+import { motion } from "framer-motion"
+
 const Header = () => {
   return (
     <section className="flex flex-col items-center mb-20">
       <div className="text-center">
+        <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5}}>
         <div className="flex items-center justify-center mb-5 gap-5">
             <div className="flex items-center">
             <img className="rounded-full size-14" src="Ellipse1.png" alt="" />
@@ -11,8 +15,13 @@ const Header = () => {
             </div>
             <p className="text-md"><span className="font-bold">500+</span> Happy Customers</p>
         </div>
+        </motion.div>
+        <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5, delay:0.5}}>
         <h1 className="text-xl">Don't Just Sell on Amazon</h1>
+        </motion.div>
+        <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5, delay:1}}>
         <h1 className="text-xl text-secondary">Dominate It!</h1>
+        </motion.div>
       </div>
       <img className="w-4xl" src="/sharkbusinessmen.webp" alt="" />
       <div className="w-full px-20">
