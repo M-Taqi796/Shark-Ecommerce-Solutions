@@ -4,8 +4,8 @@ import { motion } from "framer-motion"
 const Founder = () => {
     return (
         <div className="flex mx-72 mb-20 justify-around items-center">
-            <motion.div initial={{x:-100, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:1, delay:0.5}}>
-                <img className="w-xl rounded-l-[6.25rem] rounded-r-3xl hover:scale-105 transition-transform duration-300" src="MrSomeone.jpeg" alt="" />
+            <motion.div initial={{x:-100, opacity:1}} whileInView={{x:0, opacity:1}} transition={{duration:1}}>
+                <img className="w-xl rounded-l-[6.25rem] rounded-r-3xl hover:scale-105 transition-transform duration-300" src="qwerty.jpeg" alt="" />
             </motion.div>
 
             <motion.div initial={{x:100, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:1}}>
