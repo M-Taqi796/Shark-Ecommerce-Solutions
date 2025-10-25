@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import { ArrowRight2 } from "iconsax-reactjs";
 export default function Sidebar({ open, onClose }) {
   return (
     <div
@@ -12,11 +12,12 @@ export default function Sidebar({ open, onClose }) {
         className="absolute top-4 right-4 text-gray-600"
         onClick={onClose}
       >
-        Close
+        {/* Close */}
+        <ArrowRight2 size="32" color="#628B48" variant="Outline"/>
       </button>
       <div className="p-8">
         {/* I removed the unnecessary flex classes from here */}
-        <h2 className="text-lg font-bold mb-4">Sidebar</h2>
+        {/* <h2 className="text-lg font-bold mb-4">Shark Ecommerce Solutions</h2> */}
 
         {/* Add a <nav> wrapper here with the flex classes */}
         <nav className="flex flex-col gap-4">
@@ -26,6 +27,7 @@ export default function Sidebar({ open, onClose }) {
           <NavLink className={({isActive})=> isActive? "font-bold" : ""} to="/about">About us</NavLink>
           <NavLink className={({isActive})=> isActive? "font-bold" : ""} to="/audit">Free Audit</NavLink>
           <NavLink className={({isActive})=> isActive? "font-bold" : ""} to="/contact">Contact us</NavLink>
+          <NavLink className={({isActive})=> isActive? "font-bold" : ""} to="/meeting">Meeting</NavLink>
         </nav>
       </div>
     </div>

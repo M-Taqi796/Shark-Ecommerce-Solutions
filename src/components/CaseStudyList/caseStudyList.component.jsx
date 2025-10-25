@@ -1,6 +1,7 @@
 import CaseStudyCard from "./core/caseStudyCard.component"
-
+import { useNavigate } from "react-router-dom"
 const CaseStudyList = () => {
+    const navigate = useNavigate();
     return (
         <section className="mb-20 mx-52 max-[88rem]:mx-32 max-xl:mx-20 max-sm:mx-8 ">
             <CaseStudyCard 
@@ -12,6 +13,7 @@ const CaseStudyList = () => {
             twoTitle={"ACOS Reduced"}
             image={"cs_1_1.png"}
             color={"primary"}
+            onClick={() => navigate('/case-study/csleyo01')}
             />
             <CaseStudyCard 
             heading="Achieving Lifetime Sales Growth with ACoS Reduced Below 20%" 
@@ -23,27 +25,26 @@ const CaseStudyList = () => {
             image={"cs_2_1.png"}
             color={"primary"}
             direction={"reverse"}
+            onClick={() => navigate('/case-study/csleyo02')}
             />
             <CaseStudyCard 
             heading="Boosting Sales Through Strategic Amazon Listing Optimization" 
             description="This case study highlights how optimized product listings significantly improved visibility, conversion rates, and overall sales performance without increasing advertising costs"
             oneNum={"50%"}
             oneTitle={"Increase in Sales in just one Month"}
-            // twoNum={"46+"}
-            // twoTitle={"Tacos Reduced"}
             image={"cs_3_1.png"}
             color={"primary"}
+            onClick={() => navigate('/case-study/csleyo03')}
             />
             <CaseStudyCard 
             heading="Enhancing Brand Visibility with Advanced Amazon Graphic Design Solution" 
             description="This case study showcases how high-quality listing images, A+ content, and storefront graphics significantly increased customer engagement, improved conversion rates, and boosted overall sales performance."
             oneNum={"45%"}
-            oneTitle={"Raise in conversion within a month"}
-            // twoNum={"46+"}
-            // twoTitle={"Tacos Reduced"}
+            oneTitle={"Raise conversion within a month"}
             image={"cs_4_1.png"}
             color={"primary"}
             direction={"reverse"}
+            onClick={() => navigate('/case-study/csleyo04')}
             />
         </section>
     )

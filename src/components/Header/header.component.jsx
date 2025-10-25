@@ -25,7 +25,8 @@ const Header = () => {
         <h1 className="text-xl max-sm:text-sxl text-secondary">Dominate It!</h1>
         </motion.div>
       </div>
-      <img className="w-4xl max-[70rem]:w-3xl max-[62.5rem]:w-2xl max-[56.25rem]:w-md max-[41.25rem]:w-sm max-[30rem]:w-2xs max-[23.75rem]:w-[15rem]" src="/sharkbusinessmen.webp" alt="" />
+      <h1 className="text-md max-sm:text-smd mb-6">Your Trusted Amazon Marketing Partner</h1>
+      <img className="hidden w-4xl max-[70rem]:w-3xl max-[62.5rem]:w-2xl max-[56.25rem]:w-md max-[41.25rem]:w-sm max-[30rem]:w-2xs max-[23.75rem]:w-[15rem]" src="/sharkbusinessmen.webp" alt="" />
       <div className="w-full px-20 max-[41.25rem]:px-4">
         <div className="bg-backgroundSecondary rounded-4xl py-16 w-full max-sm:py-8">
           <div className="grid grid-cols-4 gap-6 px-40 max-[77.5rem]:px-20 max-[60rem]:px-10 max-[52.5rem]:gap-2 max-md:grid-cols-2 max-sm:grid-cols-1">
