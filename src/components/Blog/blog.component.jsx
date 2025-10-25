@@ -1,6 +1,7 @@
 import Counter from "../Counter/counter.component"
-
+import { useNavigate } from "react-router-dom"
 const Blog = () => {
+    const navigate = useNavigate();
     return (
         <section className="flex items-center px-20 py-12 bg-primary mb-20 gap-6">
             <article>
@@ -16,7 +17,7 @@ const Blog = () => {
                         <p className="text-md">ExpertTeam</p>
                     </div>
                 </div>
-                <button className="text-fontWhite w-96 py-3 bg-backgroundSecondary shadow-[4px_4px_0px_0px] shadow-background hover:shadow-[0px_0px_0px_0px]">Get a <span className="font-bold">Free</span> Audit Report</button>
+                <button className="text-fontWhite w-96 py-3 bg-backgroundSecondary shadow-[4px_4px_0px_0px] shadow-background hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/audit")}>Get a <span className="font-bold">Free</span> Audit Report</button>
             </article>
             <img className="rounded-4xl hover:scale-105 transition-transform duration-300" src="BlogImg.webp" alt="" />
         </section>

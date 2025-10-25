@@ -6,6 +6,7 @@ const CaseStudyCard = ({
   twoNum,
   twoTitle,
   image,
+  color,
   direction,
 }) => {
   return (
@@ -28,7 +29,7 @@ const CaseStudyCard = ({
           </div>
         </div>
       </div>
-      <img className="rounded-xl w-[50%] hover:scale-102 transition-transform duration-300" src={image} alt="" />
+      <img className={`rounded-xl w-[50%] hover:scale-102 transition-transform duration-300 border-40 border-${color}`} src={image} alt="" />
     </section>
   );
 };
