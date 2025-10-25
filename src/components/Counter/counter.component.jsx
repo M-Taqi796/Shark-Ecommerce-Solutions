@@ -44,7 +44,7 @@ const Counter = ({ targetNumber, duration = 2000, color = "text-secondary", stri
   }, [isVisible, targetNumber, duration]);
 
   return (
-    <div ref={ref} className={`${size} font-bold ${color} group-hover:text-fontWhite`}>
+    <div ref={ref} className={`${size} font-bold ${color} group-hover:text-fontWhite max-[93.75rem]:text-4xl max-[67.5rem]:text-3xl max-sm:text-smd`}>
       <p>{count}{string}</p>
     </div>
   );
