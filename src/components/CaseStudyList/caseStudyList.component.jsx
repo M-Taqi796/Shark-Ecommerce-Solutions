@@ -2,7 +2,7 @@ import CaseStudyCard from "./core/caseStudyCard.component"
 
 const CaseStudyList = () => {
     return (
-        <section className="mb-20 mx-52">
+        <section className="mb-20 mx-52 max-[88rem]:mx-32 max-xl:mx-20 max-sm:mx-8 ">
             <CaseStudyCard 
             heading="Amazon PPC Optimization - Driving 60% Increase in Sales with 40% Lower ACOS" 
             description="Through advanced Amazon PPC optimization strategies, we helped increase product visibility, improve click-through rates, and achieve a 60% boost in sales while reducing Advertising Cost of Sales ACOS by 40%."
