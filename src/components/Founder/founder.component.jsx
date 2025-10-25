@@ -5,14 +5,14 @@ const Founder = () => {
     return (
         <div className="flex mx-72 mb-20 justify-around items-center">
             <motion.div initial={{x:-100, opacity:1}} whileInView={{x:0, opacity:1}} transition={{duration:1}}>
-                <img className="w-xl rounded-l-[6.25rem] rounded-r-3xl hover:scale-105 transition-transform duration-300" src="qwerty.jpeg" alt="" />
+                <img className="w-xl rounded-l-[6.25rem] rounded-r-3xl hover:scale-105 transition-transform duration-300" src="founder.jpeg" alt="" />
             </motion.div>
 
             <motion.div initial={{x:100, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:1}}>
             <div>
                 <h3 className="text-lg">Meet our Founder</h3>
                 <h2 className="text-xl">Mr. Someone</h2>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-inside text-sm">
                     <li>WriteSomeSentenceHere</li>
                     <li>WriteSomeSentenceHere</li>
                     <li>WriteSomeSentenceHere</li>
