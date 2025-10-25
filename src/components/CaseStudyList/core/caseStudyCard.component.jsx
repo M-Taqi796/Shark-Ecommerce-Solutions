@@ -21,11 +21,11 @@ const CaseStudyCard = ({
         <div className="flex gap-10 items-center max-sm:flex-col max-sm:items-start max-sm:gap-4">
           <div className="flex gap-3 items-center">
             <p className="text-md max-sm:text-ssm">{oneNum}</p>
-            <p className="w-28 text-sm max-sm:text-ssm">{oneTitle}</p>
+            <p className="w-36 text-sm max-sm:text-ssm">{oneTitle}</p>
           </div>
           <div className="flex gap-3 items-center">
             <p className="text-md max-sm:text-smd">{twoNum}</p>
-            <p className="w-28 text-sm max-sm:text-ssm">{twoTitle}</p>
+            <p className="w-36 text-sm max-sm:text-ssm">{twoTitle}</p>
           </div>
         </div>
       </div>

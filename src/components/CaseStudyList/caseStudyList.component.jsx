@@ -29,8 +29,6 @@ const CaseStudyList = () => {
             description="This case study highlights how optimized product listings significantly improved visibility, conversion rates, and overall sales performance without increasing advertising costs"
             oneNum={"50%"}
             oneTitle={"Increase in Sales in just one Month"}
-            // twoNum={"46+"}
-            // twoTitle={"Tacos Reduced"}
             image={"cs_3_1.png"}
             color={"primary"}
             />
@@ -38,9 +36,7 @@ const CaseStudyList = () => {
             heading="Enhancing Brand Visibility with Advanced Amazon Graphic Design Solution" 
             description="This case study showcases how high-quality listing images, A+ content, and storefront graphics significantly increased customer engagement, improved conversion rates, and boosted overall sales performance."
             oneNum={"45%"}
-            oneTitle={"Raise in conversion within a month"}
-            // twoNum={"46+"}
-            // twoTitle={"Tacos Reduced"}
+            oneTitle={"Raise conversion within a month"}
             image={"cs_4_1.png"}
             color={"primary"}
             direction={"reverse"}
