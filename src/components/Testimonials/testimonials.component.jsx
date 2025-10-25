@@ -1,24 +1,54 @@
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import TestimonialBox from "./core/Testimonial-box.component";
+
+import testimonials from "./data/testimonials";
+import { useEffect, useState } from "react";
+
 const Testimonials = () => {
-    return (
-        <div className="mb-20">
-            <h1 className="text-xl text-secondary text-center mb-10">Client Testimonials</h1>
-            <div className="flex items-center mx-40 justify-between">
-                <img className="size-16 hover:scale-130 transition-transform duration-300" src="left.svg" alt="" />
-                <div className="flex flex-col items-center">
-                    <img className="rounded-full size-24 mb-4" src="default.jpg" alt="" />
-                    <h2 className="text-lg">NameOfClient</h2>
-                    <div className="flex gap-1.5 mb-6">
-                        <img className="size-8" src="Star.svg" alt="" />
-                        <img className="size-8" src="Star.svg" alt="" />
-                        <img className="size-8" src="Star.svg" alt="" />
-                        <img className="size-8" src="Star.svg" alt="" />
-                        <img className="size-8" src="Star.svg" alt="" />
-                    </div>
-                    <p className="text-center text-sm w-3xl">Stand out from the competition and showcase your brand with top-tier A+ content, Brand Stores, and graphics that convert. Our Amazon agency can get it done</p>
-                </div>
-                <img className="size-16 hover:scale-130 transition-transform duration-300" src="right.svg" alt="" />
-            </div>
-        </div>
-    )
-}
-export default Testimonials
+  const [showNavigation, setShowNavigation] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setShowNavigation(window.innerWidth >= 850);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <div className="max-w-[1690px] mx-auto">
+      <h1 className="text-lg text-center font-poppins mb-20">
+        Client Testimonials
+      </h1>
+      <section className="w-full px-4 mb-20">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          slidesPerView={1}
+          navigation={showNavigation}
+          pagination={{ clickable: true }}
+          loop={true}
+          spaceBetween={100}
+          style={{ width: "100%" }}
+        >
+          {testimonials.map((testimonial, index) => (
+            <SwiperSlide key={index} className="mb-14 md:mb-20">
+              <TestimonialBox
+                pic={testimonial.pic}
+                name={testimonial.name}
+                designation={testimonial.designation}
+                stars={testimonial.stars}
+                testimonial={testimonial.text}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
+    </div>
+  );
+};
+export default Testimonials;

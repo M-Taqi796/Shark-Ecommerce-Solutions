@@ -2,9 +2,13 @@
 
 @theme {
   --text-sm: 1.25rem;
+  --text-ssm: 1rem;
   --text-md: 1.5rem;
+  --text-smd: 1.25rem;
   --text-lg: 2rem;
+  --text-slg: 1.75rem;
   --text-xl: 3rem;
+  --text-sxl: 2.25rem;
 
   --color-primary: #ECA72C;
   --color-secondary: #628B48;
