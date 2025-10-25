@@ -7,7 +7,7 @@ const NavBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <nav className="flex justify-between items-center px-20 mt-6 mb-10 max-[67.5rem]:px-6 max-sm:px-2">
-      <img className="h-16 max-[60rem]:h-12 max-[49rem]:h-10 max-md:h-16 max-sm:h-12" src="/Logo.avif" alt="" />
+      <img className="h-16 max-[60rem]:h-12 max-[49rem]:h-10 max-md:h-16 max-sm:h-12" src="/Landscape_Logo_Jpg.svg" alt="" />
       <div className="flex gap-8 max-md:hidden max-[60rem]:gap-4 ">
         <NavLink className={({isActive})=> isActive? "font-bold" : ""} to="/">Home</NavLink>
         <NavLink className={({isActive})=> isActive? "font-bold" : ""} to="/services">Services</NavLink>

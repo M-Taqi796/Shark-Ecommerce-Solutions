@@ -8,12 +8,13 @@ const CaseStudyCard = ({
   image,
   color,
   direction,
+  onClick
 }) => {
   return (
     <section
       className={`flex items-center gap-16 py-3 border-b max-lg:flex-col max-lg:gap-6 ${
         direction === "reverse" ? "flex-row-reverse" : ""
-      }`}
+      }`} onClick={onClick}
     >
       <div className="flex flex-col gap-6 w-full">
         <h2 className="font-bold text-md max-sm:text-smd">{heading}</h2>
