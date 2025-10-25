@@ -10,20 +10,20 @@ const ContactForm = () => {
     "Account Management",
   ];
   return (
-    <section className="mx-80 mb-20">
+    <section className="mx-80 mb-20 max-xl:mx-20 max-sm:mx-4">
       <article className="text-center py-3">
-        <h1 className="text-xl text-secondary font-bold">Get In Touch</h1>
-        <p className="text-sm">
+        <h1 className="text-xl max-sm:text-sxl text-secondary font-bold">Get In Touch</h1>
+        <p className="text-sm max-sm:text-ssm">
           Questions, ideas, or opportunities—we’d love to hear from you. Contact
           Shark Ecommerce today and let's take your brand to the next level.
         </p>
       </article>
       <form
-        className="flex flex-col gap-5 w-full border rounded-4xl p-8 text-sm"
+        className="flex flex-col gap-5 w-full border rounded-4xl p-8 text-sm max-sm:p-4"
         action="https://formsubmit.co/farasat381amazon@gmail.com"
         method="POST"
       >
-        <div className="flex gap-3">
+        <div className="flex gap-3 max-md:flex-col max-md:gap-5">
           <input
             className="hidden"
             type="text"
@@ -31,14 +31,14 @@ const ContactForm = () => {
             value="Contact Request"
           />
           <input
-            className="w-full border p-2.5 rounded-tl-2xl focus:outline-none focus:ring-2 focus:ring-secondary"
+            className="w-full border p-2.5 rounded-tl-2xl focus:outline-none focus:ring-2 focus:ring-secondary max-md:rounded-tr-2xl"
             type="text"
             name="First Name"
             required
             placeholder="First Name"
           />
           <input
-            className="w-full border p-2.5 rounded-tr-2xl focus:outline-none focus:ring-2 focus:ring-secondary"
+            className="w-full border p-2.5 min-md:rounded-tr-2xl focus:outline-none focus:ring-2 focus:ring-secondary"
             type="text"
             name="Second Name"
             required

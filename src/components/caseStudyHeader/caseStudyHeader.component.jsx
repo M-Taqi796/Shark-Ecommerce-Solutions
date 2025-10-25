@@ -17,7 +17,8 @@ const CaseStudyHeader = () => {
                 </motion.div>
                 <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.5}}>
                 <div className="flex items-center gap-6 p-6 bg-primary rounded-2xl">
-                    <Counter targetNumber={100} string="+" color="text-fontprimary" size="text-lg"/>
+                    {/* <Counter targetNumber={100} string="+" color="text-fontprimary" size="text-lg"/> */}
+                    <p className="text-lg font-bold">1K+</p>
                     <p className="text-sm max-sm:text-ssmt">Projects<br />Completed</p>
                 </div>
                 </motion.div>
