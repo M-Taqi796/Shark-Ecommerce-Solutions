@@ -9,12 +9,12 @@ const Blog = () => {
                 <p className="text-sm mb-6">At Shark Ecommerce & Solutions, we specialize in Amazon PPC and listing management to maximize your sales potential and streamline your account management for success.</p>
                 <div className="flex gap-10 items-center mb-6">
                     <div>
-                        <Counter targetNumber={150} string="+" size="text-lg" color="text-fontPrimary"/>
-                        <p className="text-md">ExpertTeam</p>
+                        <Counter targetNumber={200} string="K+" size="text-lg" color="text-fontPrimary"/>
+                        <p className="text-md">Monthly Profit</p>
                     </div>
                     <div>
-                        <Counter targetNumber={150} string="+" size="text-lg" color="text-fontPrimary"/>
-                        <p className="text-md">ExpertTeam</p>
+                        <Counter targetNumber={1500} string="K+" size="text-lg" color="text-fontPrimary"/>
+                        <p className="text-md">Daily Sales</p>
                     </div>
                 </div>
                 <button className="text-fontWhite w-96 py-3 bg-backgroundSecondary shadow-[4px_4px_0px_0px] shadow-background hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/audit")}>Get a <span className="font-bold">Free</span> Audit Report</button>

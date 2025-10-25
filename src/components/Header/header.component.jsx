@@ -1,8 +1,10 @@
 import Stats from "./core/stats.component";
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <section className="flex flex-col items-center mb-20">
       <div className="text-center">
@@ -27,14 +29,14 @@ const Header = () => {
       <div className="w-full px-20">
         <div className="bg-backgroundSecondary rounded-4xl py-16 w-full">
           <div className="grid grid-cols-4 gap-6 px-40">
-            <Stats heading={"150+"} subHeading={"TitleNumberOne"} string={"+"}/>
-            <Stats heading={"150+"} subHeading={"TitleNumberTwo"} string={"K+"}/>
-            <Stats heading={"150+"} subHeading={"TitleNumberThree"} string={"M+"}/>
-            <Stats heading={"150+"} subHeading={"TitleNumberFour"} string={"B+"}/>
+            <Stats heading={"250"} subHeading={"7 Fig Accounts Managed"} string={"+"}/>
+            <Stats heading={"1500"} subHeading={"Daily Sales Generated"} string={"K+"}/>
+            <Stats heading={"200"} subHeading={"Consistant Monthly Profit Generated"} string={"K+"}/>
+            <Stats heading={"25"} subHeading={"CRV elevate in just 3 months"} string={"%"}/>
           </div>
           <div className="flex justify-center gap-6 mt-12">
-            <button className="text-fontWhite w-96 py-3 bg-secondary shadow-[4px_4px_0px_0px] shadow-background hover:shadow-[0px_0px_0px_0px]">Schedule a meeting</button>
-            <button className="text-fontPrimary w-96 py-3 bg-primary shadow-[4px_4px_0px_0px] shadow-background hover:shadow-[0px_0px_0px_0px]">Get a <span className="font-bold">Free</span> Audit Report</button>
+            <button className="text-fontWhite w-96 py-3 bg-secondary shadow-[4px_4px_0px_0px] shadow-background hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/meeting")}>Schedule a meeting</button>
+            <button className="text-fontPrimary w-96 py-3 bg-primary shadow-[4px_4px_0px_0px] shadow-background hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/audit")}>Get a <span className="font-bold">Free</span> Audit Report</button>
           </div>
         </div>
       </div>

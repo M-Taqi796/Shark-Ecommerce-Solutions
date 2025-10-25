@@ -4,7 +4,7 @@ const Services = () => {
     return (
         <section className="mb-20 mx-40">
             <h1 className="text-xl text-secondary text-center">We Help You Rise</h1>
-            <p className="text-center mx-60">From PPC campaigns to SEO, design, and listing optimization — we provide end-to-end Amazon solutions that boost visibility, increase sales, and strengthen your brand. Our strategies are built to help you grow smarter, faster, and higher.</p>
+            <p className="text-center mx-60 text-sm">From PPC campaigns to SEO, design, and listing optimization — we provide end-to-end Amazon solutions that boost visibility, increase sales, and strengthen your brand. Our strategies are built to help you grow smarter, faster, and higher.</p>
             <div className="flex justify-between mt-10">
                 <ServicesCard image="ppc.svg" title="Amazon PPC" description="Drive targeted traffic and boost sales with data-driven ad campaigns that maximise ROI and lower ACoS."/>
                 <ServicesCard image="listing.svg" title="Listing optimization" description="Improve visibility and conversions by keyword-rich titles, compelling copy, and enhanced product content."/>
