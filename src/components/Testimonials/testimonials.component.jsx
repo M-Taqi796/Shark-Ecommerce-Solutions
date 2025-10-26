@@ -1,4 +1,5 @@
-import { Navigation, Pagination } from "swiper/modules";
+// 1. Import the Autoplay module
+import { Navigation, Pagination, Autoplay } from "swiper/modules"; // <-- ADD Autoplay
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -27,13 +28,19 @@ const Testimonials = () => {
       </h1>
       <section className="w-full px-4 mb-20">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Autoplay, Navigation, Pagination]} // <-- ADD Autoplay
           slidesPerView={1}
           navigation={showNavigation}
           pagination={{ clickable: true }}
           loop={true}
           spaceBetween={100}
           style={{ width: "100%" }}
+          
+          // 3. Add the autoplay prop
+          autoplay={{
+            delay: 5000, // Time in ms between slides
+            disableOnInteraction: false, // Autoplay won't stop after user interaction
+          }}
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className="mb-14 md:mb-20">

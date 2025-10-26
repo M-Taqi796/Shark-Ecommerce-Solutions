@@ -9,7 +9,7 @@ const TestimonialBox = ({ pic, name, designation, testimonial, stars = 5 }) => {
         <div className="stars flex justify-center gap-1 mt-2">
           {Array.from({ length: stars }).map((_, idx) => (
             // <img src={Star1} alt="star" key={idx} />
-            <Star1 key={idx} alt="star" variant="" color="#ECA72C"/>
+            <Star1 key={idx} alt="star" variant="Bold" color="#ECA72C"/>
           ))}
         </div>
       </div>

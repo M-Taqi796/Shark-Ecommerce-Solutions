@@ -70,8 +70,8 @@ const CaseStudyFour = () => {
       <section className="grid grid-cols-2 gap-10 mx-20 justify-center items-center mb-20 max-lg:mx-6 max-lg:gap-4 max-md:grid-cols-1 max-sm:mx-2 max-sm:gap-2">
         <img className="w-full border" src="/cs_4_1.png" alt="" />
         <img className="w-full border" src="/cs_4_2.png" alt="" />
-        <img className="w-full border" src="/cs_4_4.png" alt="" />
         <img className="w-full border" src="/cs_4_3.png" alt="" />
+        <img className="w-full border" src="/cs_4_4.png" alt="" />
         <img className="w-full border" src="/cs_4_5.png" alt="" />
         <img className="w-full border" src="/cs_4_6.png" alt="" />
       </section>
