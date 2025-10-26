@@ -11,7 +11,7 @@ const Features = () => {
             <div className="flex items-center gap-2 max-[75rem]:gap-1 w-full px-6 max-[75rem]:px-2 py-1.5 border border-fontSecondary rounded-md">
                 <img src="/handshake.svg" alt="" />
                 <div className="text-sm max-sm:text-ssm">
-                    <p>92% Client</p>
+                    <p>97% Client</p>
                     <p>Retention Rate</p>
                 </div>
             </div>

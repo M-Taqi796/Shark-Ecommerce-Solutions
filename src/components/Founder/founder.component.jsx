@@ -11,12 +11,14 @@ const Founder = () => {
             <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:1}}>
             <div>
                 <h3 className="text-lg max-sm:text-smd">Meet our Founder</h3>
-                <h2 className="text-xl max-sm:text-sxl">Mr. Someone</h2>
+                <h2 className="text-xl max-sm:text-sxl">Mr. Farasat Sohail</h2>
                 <ul className="list-disc list-inside text-sm max-sm:text-ssm">
-                    <li>WriteSomeSentenceHere</li>
-                    <li>WriteSomeSentenceHere</li>
-                    <li>WriteSomeSentenceHere</li>
-                    <li>WriteSomeSentenceHere</li>
+                    <li>Amazon PPC master</li>
+                    <li>Listing Optimization</li>
+                    <li>E-bay all services</li>
+                    <li>Walmart</li>
+                    <li>Tiktokshop</li>
+                    <li>Handles all accounts about E-commerce</li>
                 </ul>
             </div>
             </motion.div>
