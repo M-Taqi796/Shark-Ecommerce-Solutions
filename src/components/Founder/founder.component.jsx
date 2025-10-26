@@ -13,12 +13,12 @@ const Founder = () => {
                 <h3 className="text-lg max-sm:text-smd">Meet our Founder</h3>
                 <h2 className="text-xl max-sm:text-sxl">Mr. Farasat Sohail</h2>
                 <ul className="list-disc list-inside text-sm max-sm:text-ssm">
-                    <li>Amazon PPC master</li>
+                    <li>Amazon PPC Master</li>
                     <li>Listing Optimization</li>
-                    <li>E-bay all services</li>
+                    <li>E-Bay All Services</li>
                     <li>Walmart</li>
                     <li>Tiktokshop</li>
-                    <li>Handles all accounts about E-commerce</li>
+                    <li>Handles All Accounts About E-Commerce</li>
                 </ul>
             </div>
             </motion.div>

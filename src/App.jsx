@@ -13,11 +13,12 @@ import Footer from "./components/Footer/footer.component"
 import LoadingBar from "./components/LoadingBar/loadingBar.component"
 import Audit from "./routes/audit"
 import Meeting from "./routes/meeting"
-
+import ScrollToTop from "./routes/scrollTop"
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <LoadingBar />
         <NavBar />
         <Routes>
