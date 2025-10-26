@@ -1,5 +1,3 @@
-// For default pic use: "/default.jpg""
-
 const testimonials = [
   {
     pic: "/Sienna.png",
@@ -14,7 +12,7 @@ const testimonials = [
     text: "Kamran is, without a doubt, the best Amazon brand manager we've worked with. His deep understanding of Amazon's platform, attention to detail, and proactive approach have greatly benefited our brand. He consistently delivers top-tier results, from optimizing listings to managing PPC campaigns, and his communication skills make the entire process smooth and efficient. If you're looking to take your Amazon business to the next level, Kamran is the person you want on your team. Highly recommended!",
   },
   {
-    pic: "/Jack.png",
+    pic: "/jack.png",
     name: "Jack",
     stars: 5,
     text: "Kamran has consistently delivered exceptional performance in managing our advertising campaigns. They expertly fine-tune bidding strategies, monitor keyword performance, and adjust ad placements in real time to maximize return on ad spend. Their data-driven approach has led to noticeable improvements in our click-through and conversion rates, while their proactive responsiveness to market trends ensures that our campaigns remain competitive and effective",
