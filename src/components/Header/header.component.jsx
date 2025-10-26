@@ -6,26 +6,31 @@ import { useNavigate } from "react-router-dom"
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <section className="flex flex-col items-center mb-20">
-      <div className="text-center">
+    <section className="flex flex-col mb-20">
+      <div className="mx-20 flex justify-center items-center gap-10 max-lg:flex-col max-lg:gap-2">
+        <div>
         <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5}}>
-        <div className="flex items-center justify-center mb-5 gap-5">
+        <div className="flex items-center mb-5 gap-5 max-lg:justify-center">
             <div className="flex items-center">
-            <img className="rounded-full size-14 max-sm:size-10" src="Ellipse1.png" alt="" />
-            <img className="rounded-full size-14 max-sm:size-10 ml-[-1.25rem]" src="Ellipse2.png" alt="" />
-            <img className="rounded-full size-14 max-sm:size-10 ml-[-1.25rem]" src="Ellipse3.png" alt="" />
+            <img className="rounded-full size-14 max-xl:size-12 max-sm:size-10" src="Ellipse1.png" alt="" />
+            <img className="rounded-full size-14 max-xl:size-12 max-sm:size-10 ml-[-1.25rem]" src="Ellipse2.png" alt="" />
+            <img className="rounded-full size-14 max-xl:size-12 max-sm:size-10 ml-[-1.25rem]" src="Ellipse3.png" alt="" />
             </div>
             <p className="text-md max-sm:text-smd"><span className="font-bold">500+</span> Happy Customers</p>
         </div>
         </motion.div>
         <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5, delay:0.5}}>
-        <h1 className="text-xl max-sm:text-sxl">Don't Just Sell on Amazon</h1>
+         <h1 className="text-xl max-sm:text-sxl max-lg:text-center">Don't Just Sell on Amazon</h1>
         </motion.div>
         <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5, delay:1}}>
-        <h1 className="text-xl max-sm:text-sxl text-secondary">Dominate It!</h1>
+          <h1 className="text-xl max-sm:text-sxl text-secondary max-lg:text-center">Dominate It!</h1>
+        </motion.div>
+        <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5, delay:1.5}}>
+          <h1 className="text-md max-sm:text-smd mb-6 max-lg:text-center">Your Trusted Amazon Marketing Partner</h1>
         </motion.div>
       </div>
-      <h1 className="text-md max-sm:text-smd mb-6">Your Trusted Amazon Marketing Partner</h1>
+      <img className="w-100 max-xl:w-80" src="/shark.png" alt="" />
+      </div>
       <img className="hidden w-4xl max-[70rem]:w-3xl max-[62.5rem]:w-2xl max-[56.25rem]:w-md max-[41.25rem]:w-sm max-[30rem]:w-2xs max-[23.75rem]:w-[15rem]" src="/sharkbusinessmen.webp" alt="" />
       <div className="w-full px-20 max-[41.25rem]:px-4">
         <div className="bg-backgroundSecondary rounded-4xl py-16 w-full max-sm:py-8">

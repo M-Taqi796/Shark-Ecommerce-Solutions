@@ -1,6 +1,3 @@
-import Counter from "../Counter/counter.component";
-/* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 const AboutUsHeader = () => {
   const navigate = useNavigate();
@@ -16,11 +13,7 @@ const AboutUsHeader = () => {
         </p>
       </article>
       <section className="flex justify-between items-center gap-6 mx-40 mb-20 max-xl:mx-14 max-lg:flex-col max-sm:mx-6">
-        <motion.div
-          initial={{ x: -200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div>
           <article className="w-full">
             <h1 className="text-xl mb-6 max-lg:text-center max-sm:text-sxl">Our Success Story</h1>
             <p className="text-md max-lg:text-center max-sm:text-smd">
@@ -42,12 +35,8 @@ const AboutUsHeader = () => {
               We're not just Amazon experts. We're your trusted partners in scaling your brand to its full potential.
             </p>
           </article>
-        </motion.div>
-        <motion.div
-          initial={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        </div>
+        <div>
           <div className="flex flex-col gap-6">
             <h2 className="font-bold text-md max-sm:text-smd text-center">This isn't just what we do,  it's who we are</h2>
             <div className="rounded-3xl bg-primary p-6 min-w-[20rem] max-sm:min-w-[6rem] text-center font-bold text-sm">
@@ -60,11 +49,11 @@ const AboutUsHeader = () => {
                 <p>Results obsessed</p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
       <section className="flex flex-col items-center gap-8 py-20 bg-primary mb-20">
                 <h1 className="text-md text-center font-bold max-sm:text-smd">Want to become another success story?</h1>
-                 <button className="text-fontPrimary px-6 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]">Lets Talk</button>
+                 <button className="text-fontPrimary px-6 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]" onClick={()=>navigate("/contact")}>Lets Talk</button>
             </section>
     </section>
   );

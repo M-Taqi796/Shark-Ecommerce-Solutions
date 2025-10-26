@@ -19,7 +19,7 @@ const Servicesmain = () => {
           />
           <ServicesCard
             image="design.svg"
-            title="Design"
+            title="Graphic Design"
             description="Create eye-catching visuals, A+ content, and storefront designs that build trust and attract more buyers."
           />
         </div>

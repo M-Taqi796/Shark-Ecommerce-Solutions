@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
+import MeetingCard from "../components/MeetingCard/meetingCard.component";
 
 const CaseStudyThree = () => {
   return (
@@ -66,6 +67,7 @@ const CaseStudyThree = () => {
         <img className="w-full border" src="/cs_3_3.png" alt="" />
         <img className="w-full border" src="/cs_3_5.png" alt="" />
       </section>
+      <MeetingCard />
     </section>
   );
 };

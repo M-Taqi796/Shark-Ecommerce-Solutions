@@ -40,7 +40,6 @@ const Testimonials = () => {
               <TestimonialBox
                 pic={testimonial.pic}
                 name={testimonial.name}
-                designation={testimonial.designation}
                 stars={testimonial.stars}
                 testimonial={testimonial.text}
               />
