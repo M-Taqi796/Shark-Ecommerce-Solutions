@@ -21,7 +21,7 @@ const testimonials = [
     pic: "/Rushton.png",
     name: "Rushton",
     stars: 5,
-    text: "Kamran is the man! He treats my business as though it's his own. What more could you ever want in an employee? He's an expert in dealing with Amazon support and their relentless policy changes and gliches",
+    text: "Kamran is the man! He treats my business as though it's his own. What more could you ever want in an employee? He's an expert in dealing with Amazon support and their relentless policy changes and glitches",
   },
 ];
 
