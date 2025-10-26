@@ -6,7 +6,7 @@ const NavBar = () => {
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <nav className="flex justify-between items-center px-20 mt-6 mb-10 max-[67.5rem]:px-6 max-[57.75rem]:px-1 max-sm:px-2">
+    <nav className="flex justify-between items-center px-20 mt-6 max-[67.5rem]:px-6 max-[57.75rem]:px-1 max-sm:px-2">
       <NavLink to="/">
         <img className="h-32 max-md:h-32 max-sm:h-20 max-[50rem]:h-16 max-[56.25rem]:h-24 max-[51.75rem]:h-20" src="/Landscape_Logo_Jpg.svg" alt="" />
       </NavLink>

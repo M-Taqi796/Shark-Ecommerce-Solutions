@@ -1,6 +1,7 @@
 import ServicesCard from "../Services/core/ServicesCard.component";
-
+import { useNavigate } from "react-router-dom";
 const Servicesmain = () => {
+  const navigate = useNavigate();
   return (
     <section className="mb-20 mx-20 max-sm:mx-4">
       <h1 className="text-xl text-secondary text-center max-sm:text-sxl">We Help You Rise</h1>
@@ -19,11 +20,11 @@ const Servicesmain = () => {
           />
           <ServicesCard
             image="design.svg"
-            title="Design"
+            title="Graphic Design"
             description="Create eye-catching visuals, A+ content, and storefront designs that build trust and attract more buyers."
           />
         </div>
-        <div className="w-full justify-center bg-background shadow text-fontWhite px-5 py-8 rounded-2xl flex flex-col items-center gap-4 hover:bg-primary hover:scale-105 transition-transform duration-300 group">
+        <div className="w-full justify-center bg-background shadow text-fontWhite px-5 py-8 rounded-2xl flex flex-col items-center gap-4 hover:bg-primary hover:scale-105 transition-transform duration-300 group" onClick={()=>navigate('/meeting')}>
           <img className="size-28" src="ppc.svg" alt="" />
           <h2 className="text-md font-bold text-secondary group-hover:text-fontWhite">
             "Amazon PPC"
@@ -31,7 +32,7 @@ const Servicesmain = () => {
           <p className="text-fontSecondary text-sm text-center group-hover:text-fontWhite">
             "Drive targeted traffic and boost sales with data-driven ad campaigns that maximise ROI and lower ACoS."
           </p>
-          <button className="text-sm text-secondary underline cursor-pointer group-hover:text-fontWhite">
+          <button className="text-sm text-secondary underline cursor-pointer group-hover:text-fontWhite" onClick={()=>navigate('/meeting')}>
             Get Started Now
           </button>
         </div>

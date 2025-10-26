@@ -1,7 +1,8 @@
-import Counter from "../Counter/counter.component"
+import { useNavigate } from "react-router-dom"
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"
 const CaseStudyHeader = () => {
+    const navigate = useNavigate();
     return (
         <section>
             <article className="text-center py-20 px-80 bg-secondary text-fontWhite mb-20 max-xl:px-32 max-md:px-10 max-sm:px-4">
@@ -25,7 +26,7 @@ const CaseStudyHeader = () => {
             </section>
             <section className="flex flex-col items-center gap-8 py-20 bg-primary mb-20">
                 <h1 className="text-md text-center font-bold max-sm:text-smd">Want to become another success story?</h1>
-                 <button className="text-fontPrimary px-6 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]">Lets Talk</button>
+                 <button className="text-fontPrimary px-6 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/contact")}>Lets Talk</button>
             </section>
         </section>
     )

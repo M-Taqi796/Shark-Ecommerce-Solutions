@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
 const HeaderSecondry = () => {
+  const navigate = useNavigate();
   return (
     <header className="mx-20 mb-20 flex gap-6 justify-center items-center mt-20 max-xl:flex-col max-md:mx-6">
       <article className="flex flex-col gap-4 w-full items-center">
@@ -17,10 +19,10 @@ const HeaderSecondry = () => {
         </motion.div>
         <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5, delay:1}}>
         <div className="flex gap-4 max-md:flex-col">
-        <button className="text-fontWhite px-2 w-72 py-3 bg-secondary shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px] max-md:w-full">
+        <button className="text-fontWhite px-2 w-72 py-3 bg-secondary shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px] max-md:w-full" onClick={()=>navigate('/meeting')}>
           Schedule a meeting
         </button>
-        <button className="text-fontPrimary px-2 w-72 py-3 bg-primary shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px] max-md:w-full">
+        <button className="text-fontPrimary px-2 w-72 py-3 bg-primary shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px] max-md:w-full" onClick={()=>navigate('/audit')}>
           Get a <span className="font-bold">Free</span> Audit Report
         </button>
         </div>
