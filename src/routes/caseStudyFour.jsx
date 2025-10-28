@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
 import MeetingCard from "../components/MeetingCard/meetingCard.component";
 
 const CaseStudyFour = () => {
@@ -17,11 +15,7 @@ const CaseStudyFour = () => {
         </p>
       </article>
       <section className="flex justify-between items-center gap-6 mx-40 mb-20 max-xl:mx-14 max-lg:flex-col max-sm:mx-6">
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div>
           <article className="w-full">
             <h1 className="text-xl mb-6 max-lg:text-center max-sm:text-sxl">
               Case Study Description:
@@ -31,9 +25,9 @@ const CaseStudyFour = () => {
               influencing buyer decisions on Amazon. Through our professional
               graphic design services, we helped brands transform their product
               listings into high-converting visual experiences. Our services
-              include creating premium listing images, infographic designs, A+
+              include creating premium <span className="font-bold">listing images, infographic designs, A+
               Content modules, storefront banners, lifestyle images, and brand
-              story visuals that effectively highlight product features and
+              story visuals</span> that effectively highlight product features and
               benefits.
               <br /> <br />
             </p>
@@ -41,8 +35,8 @@ const CaseStudyFour = () => {
               By using visually compelling images aligned with Amazon’s
               guidelines, we successfully improved customer engagement and
               trust. The redesigned listing saw a substantial increase in
-              click-through rate and a 45% rise in conversions within the first
-              30 days. The A+ Content further enhanced brand authority, reducing
+              click-through rate and a <span className="font-bold">45% rise in conversions within the first
+              30 days.</span> The A+ Content further enhanced brand authority, reducing
               bounce rates and increasing session duration, while the storefront
               graphics helped build a cohesive brand identity that encouraged
               repeat purchases.
@@ -57,7 +51,7 @@ const CaseStudyFour = () => {
               solely on paid advertising.
             </p>
           </article>
-        </motion.div>
+        </div>
       </section>
       <section className="flex flex-col items-center gap-8 py-20 bg-primary mb-20">
         <h1 className="text-md text-center font-bold max-sm:text-smd">

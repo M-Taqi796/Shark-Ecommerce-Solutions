@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import { motion } from "framer-motion";
 import MeetingCard from "../components/MeetingCard/meetingCard.component";
 
 const CaseStudyThree = () => {
@@ -16,11 +14,7 @@ const CaseStudyThree = () => {
         </p>
       </article>
       <section className="flex justify-between items-center gap-6 mx-40 mb-20 max-xl:mx-14 max-lg:flex-col max-sm:mx-6">
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div>
           <article className="w-full">
             <h1 className="text-xl mb-6 max-lg:text-center max-sm:text-sxl">
               Case Study Description:
@@ -42,7 +36,7 @@ const CaseStudyThree = () => {
               significant increase in traffic. The improved content helped
               customers better understand the product benefits, which directly
               contributed to a higher conversion rate. As a result, sales
-              increased by over 50% within the first month, without the need for
+              increased by over <span className="font-bold">50% within the first month,</span> without the need for
               additional ad spend. The listing also started ranking on page one
               for multiple high-volume keywords, leading to consistent sales
               growth and long-term market stability. This case demonstrates that
@@ -50,7 +44,7 @@ const CaseStudyThree = () => {
               performance and drive sustainable sales growth on Amazon.
             </p>
           </article>
-        </motion.div>
+        </div>
       </section>
       <section className="flex flex-col items-center gap-8 py-20 bg-primary mb-20">
         <h1 className="text-md text-center font-bold max-sm:text-smd">

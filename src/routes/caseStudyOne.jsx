@@ -18,11 +18,7 @@ const CaseStudyOne = () => {
         </p>
       </article>
       <section className="flex justify-between items-center gap-6 mx-40 mb-20 max-xl:mx-14 max-lg:flex-col max-sm:mx-6">
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div>
           <article className="w-full">
             <h1 className="text-xl mb-6 max-lg:text-center max-sm:text-sxl">
               Case Study Description:
@@ -56,7 +52,7 @@ const CaseStudyOne = () => {
               <br /> <br />
             </p>
           </article>
-        </motion.div>
+        </div>
       </section>
       <section className="flex flex-col items-center gap-8 py-20 bg-primary mb-20">
         <h1 className="text-md text-center font-bold max-sm:text-smd">
