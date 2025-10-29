@@ -17,7 +17,7 @@ const Footer =() => {
                 </div>
                 <div className="flex flex-col max-[53.75rem]:justify-center max-[53.75rem]:items-center gap-3 items-end">
                     <h2 className="text-lg text-primary">Support</h2>
-                    <p className="text-center">+1234567890</p>
+                    <p className="text-center">+13479192740</p>
                     <p className="text-center">contact@sharkecommerce.com</p>
                 </div>
             </div>

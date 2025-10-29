@@ -1,4 +1,31 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const AuditForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ok3u67g",      // 🔹 replace with your EmailJS service ID
+        "template_s0kbkma",     // 🔹 replace with your EmailJS template ID
+        form.current,
+        "PsXQh-3BxezHP9OgW"       // 🔹 replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("✅ Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("❌ Failed to send message. Please try again.");
+        }
+      );
+  };
   return (
     <section className="mx-80 mb-20 max-xl:mx-20 max-sm:mx-4">
       <article className="text-center py-3">
@@ -9,9 +36,9 @@ const AuditForm = () => {
         </p>
       </article>
       <form
+        ref={form}
+        onSubmit={sendEmail}
         className="flex flex-col gap-5 w-full border rounded-4xl p-8 text-sm max-sm:p-4"
-        action="https://formsubmit.co/farasat381amazon@gmail.com"
-        method="POST"
       >
         <div className="flex gap-3 max-md:flex-col max-md:gap-5">
           <input
@@ -22,14 +49,14 @@ const AuditForm = () => {
           <input
             className="w-full border p-2.5 rounded-tl-2xl focus:outline-none focus:ring-2 focus:ring-secondary max-md:rounded-tr-2xl"
             type="text"
-            name="first name"
+            name="first_name"
             required
             placeholder="First Name"
           />
           <input
             className="w-full border p-2.5 min-md:rounded-tr-2xl focus:outline-none focus:ring-2 focus:ring-secondary"
             type="text"
-            name="second name"
+            name="second_name"
             required
             placeholder="Second Name"
           />
@@ -44,14 +71,14 @@ const AuditForm = () => {
         <input
           className="w-full border p-2.5 focus:outline-none focus:ring-2 focus:ring-secondary"
           type="text"
-          name="brand name"
+          name="brand_name"
           required
           placeholder="Brand Name"
         />
         <input
           className="w-full border p-2.5 focus:outline-none focus:ring-2 focus:ring-secondary"
           type="text"
-          name="average monthly revenue"
+          name="average_monthly_revenue"
           required
           placeholder="Average Monthly Revenue"
         />
