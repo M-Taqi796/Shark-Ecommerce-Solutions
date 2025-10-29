@@ -10,21 +10,32 @@
   --text-xl: 3rem;
   --text-sxl: 2.25rem;
 
-  --color-primary: #ECA72C;
-  --color-secondary: #628B48;
-  --color-fontPrimary: #0B0500;
+  --color-primary: #eca72c;
+  --color-secondary: #628b48;
+  --color-fontPrimary: #0b0500;
   --color-fontSecondary: #888888;
-  --color-background: #FBFEFB;
-  --color-backgroundSecondary: #0B0500;
-  --color-fontWhite: #FBFEFB;
+  --color-background: #fbfefb;
+  --color-backgroundSecondary: #0b0500;
+  --color-fontWhite: #fbfefb;
 }
 
-body{
+body {
   background-color: var(--color-background);
+}
+
+.font-custom {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Ubuntu", sans-serif;
+}
+*{
+  font-family: "Lato", sans-serif;
 }
 
 #nprogress .bar {
   /* background: linear-gradient(90deg, #628B48, #ECA72C) !important; */
-  background: #628B48 !important;
+  background: #628b48 !important;
   height: 6px !important;
 }

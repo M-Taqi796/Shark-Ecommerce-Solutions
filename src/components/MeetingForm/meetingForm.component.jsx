@@ -1,8 +1,35 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const MeetingForm = () => {
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
+  const form = useRef();
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3667bnr",      // 🔹 replace with your EmailJS service ID
+        "template_59zdqht",     // 🔹 replace with your EmailJS template ID
+        form.current,
+        "s1tBIXxRMadrylc1R"       // 🔹 replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("✅ Message sent successfully!");
+          e.target.reset();
+          setSelectedDate("");
+          setSelectedTime("");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("❌ Failed to send message. Please try again.");
+        }
+      );
+  };
 
   // next 30 days
   const generateDates = () => {
@@ -46,9 +73,9 @@ const MeetingForm = () => {
       </article>
 
       <form
+        ref={form}
+        onSubmit={sendEmail}
         className="flex flex-col gap-5 w-full border rounded-4xl p-8 text-sm max-sm:p-4"
-        action="https://formsubmit.co/farasat381amazon@gmail.com"
-        method="POST"
       >
         <div className="flex gap-3 max-md:flex-col max-md:gap-5">
           <input
@@ -60,14 +87,14 @@ const MeetingForm = () => {
           <input
             className="w-full border p-2.5 rounded-tl-2xl focus:outline-none focus:ring-2 focus:ring-secondary max-md:rounded-tr-2xl"
             type="text"
-            name="First Name"
+            name="first_name"
             required
             placeholder="First Name"
           />
           <input
             className="w-full border p-2.5 min-md:rounded-tr-2xl focus:outline-none focus:ring-2 focus:ring-secondary"
             type="text"
-            name="Second Name"
+            name="second_name"
             required
             placeholder="Second Name"
           />
@@ -76,14 +103,14 @@ const MeetingForm = () => {
         <input
           className="w-full border p-2.5 my-3 focus:outline-none focus:ring-2 focus:ring-secondary"
           type="email"
-          name="Email"
+          name="email"
           required
           placeholder="Email"
         />
 
         <textarea
           className="border h-32 p-2.5 focus:outline-none focus:ring-2 focus:ring-secondary"
-          name="Message"
+          name="message"
           required
           placeholder="Your Message"
         ></textarea>
@@ -93,7 +120,7 @@ const MeetingForm = () => {
           <select
             value={selectedDate}
             required
-            name="Date"
+            name="date"
             onChange={(e) => setSelectedDate(e.target.value)}
             className="w-full border rounded-bl-2xl p-2.5 text-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary"
           >
@@ -109,11 +136,11 @@ const MeetingForm = () => {
           <select
             value={selectedTime}
             required
-            name="Time"
+            name="time"
             onChange={(e) => setSelectedTime(e.target.value)}
             className="w-full border rounded-br-2xl p-2.5 text-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary"
           >
-            <option value="">Select Time (ETA)</option>
+            <option value="">Select Time (UTC)</option>
             {timeSlots.map((slot, index) => (
               <option key={index} value={slot}>
                 {slot}

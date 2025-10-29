@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion"
+import LetsTalk from "../LetsTalk/letsTalk.component";
 const CaseStudyHeader = () => {
     const navigate = useNavigate();
     return (
@@ -24,10 +25,7 @@ const CaseStudyHeader = () => {
                 </div>
                 </motion.div>
             </section>
-            <section className="flex flex-col items-center gap-8 py-20 bg-primary mb-20">
-                <h1 className="text-md text-center font-bold max-sm:text-smd">Want to become another success story?</h1>
-                 <button className="text-fontPrimary px-6 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/contact")}>Lets Talk</button>
-            </section>
+            <LetsTalk />
         </section>
     )
 }

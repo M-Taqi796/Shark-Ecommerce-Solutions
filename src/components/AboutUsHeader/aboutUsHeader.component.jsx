@@ -24,12 +24,12 @@ const AboutUsHeader = () => {
               scaling, we've helped brands elevate their CVR from 10% to 25% in
               just 3 to 6 months.
               <br /> <br />
-              But it's not just about numbers — it's about people. Just like
+              But it's not just about numbers it's about people. Just like
               great captains lead strong crews, we've built a top-notch team of
-              Amazon experts — strategists, marketers, creatives, and analysts —
+              Amazon experts strategists, marketers, creatives, and analysts
               each bringing unique skills, sharp insights, and an unwavering
               commitment to growth. We've also partnered with top U.S. agencies,
-              delivering world-class performance marketing and transforming
+              delivering world class performance marketing and transforming
               brands into category leaders.
               <br /> <br />
               We're not just Amazon experts. We're your trusted partners in scaling your brand to its full potential.

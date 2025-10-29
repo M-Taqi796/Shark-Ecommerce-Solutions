@@ -7,7 +7,7 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <section className="flex flex-col mb-20">
-      <div className="mx-20 flex justify-center items-center gap-10 max-lg:flex-col max-lg:gap-2">
+      <div className="mx-10 flex justify-center items-center gap-60 max-lg:flex-col max-lg:gap-2">
         <div>
         <motion.div initial={{y:50, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.5}}>
         <div className="flex items-center mb-5 gap-5 max-lg:justify-center">

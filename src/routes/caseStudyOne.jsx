@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import MeetingCard from "../components/MeetingCard/meetingCard.component";
+import LetsTalk from "../components/LetsTalk/letsTalk.component";
 
 const CaseStudyOne = () => {
   return (
@@ -18,11 +19,7 @@ const CaseStudyOne = () => {
         </p>
       </article>
       <section className="flex justify-between items-center gap-6 mx-40 mb-20 max-xl:mx-14 max-lg:flex-col max-sm:mx-6">
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div>
           <article className="w-full">
             <h1 className="text-xl mb-6 max-lg:text-center max-sm:text-sxl">
               Case Study Description:
@@ -56,16 +53,9 @@ const CaseStudyOne = () => {
               <br /> <br />
             </p>
           </article>
-        </motion.div>
+        </div>
       </section>
-      <section className="flex flex-col items-center gap-8 py-20 bg-primary mb-20">
-        <h1 className="text-md text-center font-bold max-sm:text-smd">
-          Want to become another success story?
-        </h1>
-        <button className="text-fontPrimary px-6 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]">
-          Lets Talk
-        </button>
-      </section>
+      <LetsTalk />
       <section className="grid grid-cols-2 gap-10 mx-20 justify-center items-center mb-20 max-lg:mx-6 max-lg:gap-4 max-md:grid-cols-1 max-sm:mx-2 max-sm:gap-2">
         <img className="w-full border" src="/cs_1_1.png" alt="" />
         <img className="w-full border" src="/cs_1_2.png" alt="" />

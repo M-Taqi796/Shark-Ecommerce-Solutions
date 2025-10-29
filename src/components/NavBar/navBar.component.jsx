@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <nav className="flex justify-between items-center px-20 mt-6 max-[67.5rem]:px-6 max-[57.75rem]:px-1 max-sm:px-2">
       <NavLink to="/">
-        <img className="h-32 max-md:h-32 max-sm:h-20 max-[50rem]:h-16 max-[56.25rem]:h-24 max-[51.75rem]:h-20" src="/Landscape_Logo_Jpg.svg" alt="" />
+        <img className="h-32 max-md:h-32 max-sm:h-20 max-[50rem]:h-16 max-[56.25rem]:h-24 max-[51.75rem]:h-20" src="/SharkLogo.svg" alt="" />
       </NavLink>
       <div className="flex gap-8 max-md:hidden max-[72rem]:gap-4 max-[60rem]:gap-4 ">
         <NavLink className={({isActive})=> isActive? "font-bold" : ""} to="/">Home</NavLink>
