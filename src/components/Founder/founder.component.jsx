@@ -5,20 +5,24 @@ const Founder = () => {
     return (
         <div className="font-custom flex mx-72 mb-20 justify-around items-center max-[94rem]:mx-28 max-[75rem]:mx-4 max-md:flex-col">
             <motion.div initial={{x:-50, opacity:1}} whileInView={{x:0, opacity:1}} transition={{duration:1}}>
-                <img className="w-xl rounded-l-[6.25rem] rounded-r-3xl hover:scale-105 transition-transform duration-300 max-[58.75rem]:w-md max-md:rounded-r-[6.25rem] max-md:mb-6 max-sm:w-sm" src="founder.jpeg" alt="" />
+                {/* <img className="w-xl rounded-l-[6.25rem] rounded-r-3xl hover:scale-105 transition-transform duration-300 max-[58.75rem]:w-md max-md:rounded-r-[6.25rem] max-md:mb-6 max-sm:w-sm" src="founder.jpeg" alt="" /> */}
+                <img className="w-[40rem] rounded-l-[6.25rem] rounded-r-3xl hover:scale-105 transition-transform duration-300 max-[58.75rem]:w-md max-md:rounded-r-[6.25rem] max-md:mb-6 max-sm:w-sm" src="farasatsohail.webp" alt="" />
             </motion.div>
 
             <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:1}}>
             <div>
                 <h3 className="text-lg max-sm:text-smd">Meet our Founder</h3>
                 <h2 className="text-xl max-sm:text-sxl">Mr. Farasat Sohail</h2>
+                <p className="text-sm max-sm:text-ssm">Amazon account management:</p>
                 <ul className="list-disc list-inside text-sm max-sm:text-ssm">
-                    <li>Handles All Accounts About E-Commerce</li>
-                    <li>Amazon PPC Master</li>
-                    <li>Listing Optimization</li>
-                    <li>E-Bay All Services</li>
-                    <li>Walmart</li>
-                    <li>Tiktokshop</li>
+                    <li>Amazon PPC expert</li>
+                    <li>Sale Growth</li>
+                    <li>Amazon listing optimisation </li>
+                    <li>Amazon listing creation & setup</li>
+                    <li>Product Sourcing & Logistics </li>
+                    <li>Amazon SEO optimisation </li>
+                    <li>Amazon seller central </li>
+                    <li>E-commerce stores Management</li>
                 </ul>
             </div>
             </motion.div>
