@@ -29,7 +29,7 @@ const Header = () => {
           <h1 className="text-md max-sm:text-smd mb-6 max-lg:text-center">Your Trusted Amazon Marketing Partner</h1>
         </motion.div>
       </div>
-      <img className="w-100 max-xl:w-80" src="/shark.png" alt="" />
+      <img className="w-100 max-xl:w-80" src="/shark.webp" alt="" />
       </div>
       <img className="hidden w-4xl max-[70rem]:w-3xl max-[62.5rem]:w-2xl max-[56.25rem]:w-md max-[41.25rem]:w-sm max-[30rem]:w-2xs max-[23.75rem]:w-[15rem]" src="/sharkbusinessmen.webp" alt="" />
       <div className="w-full px-20 max-[41.25rem]:px-4">
