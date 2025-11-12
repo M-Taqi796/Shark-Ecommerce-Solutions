@@ -1,4 +1,5 @@
 import Blog from "../components/Blog/blog.component"
+import CaseStudyCard from "../components/CaseStudyCard/caseStudyCard.component"
 import ContactCard from "../components/ContactCard/ContactCard.component"
 import Features from "../components/Features/features.component"
 import Founder from "../components/Founder/founder.component"
@@ -13,6 +14,7 @@ const Home =() => {
             <Header />
             <Features />
             <Founder />
+            <CaseStudyCard />
             <Blog />
             <Services />
             <MeetingCard />
