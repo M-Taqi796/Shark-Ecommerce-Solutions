@@ -10,7 +10,7 @@ const CaseStudyCard = () => {
                 <article className="text-center">
                     <h2 className="text-md text-fontWhite font-bold mb-3 max-sm:text-smd">Our Results</h2>
                     <p className="text-sm text-fontWhite mb-3 max-sm:text-ssm">Ready for Real-World Proof? Dive Into Our Success Stories and Learn More About Our Process.</p>
-                    <button className="text-fontPrimary px-6 max-sm:w-full max-sm:px-1 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/meeting")}>Schedule a meeting</button>
+                    <button className="text-fontPrimary px-6 max-sm:w-full max-sm:px-1 py-3 bg-background shadow-[4px_4px_0px_0px] shadow-backgroundSecondary hover:shadow-[0px_0px_0px_0px]" onClick={() => navigate("/case-study")}>Read Now</button>
                 </article>
             </section>
         </motion.div>
