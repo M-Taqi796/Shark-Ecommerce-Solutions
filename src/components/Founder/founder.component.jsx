@@ -16,7 +16,6 @@ const Founder = () => {
                 <p className="text-sm max-sm:text-ssm">Amazon account management:</p>
                 <ul className="list-disc list-inside text-sm max-sm:text-ssm">
                     <li>Amazon PPC expert</li>
-                    <li>Sale Growth</li>
                     <li>Amazon listing optimisation </li>
                     <li>Amazon listing creation & setup</li>
                     <li>Product Sourcing & Logistics </li>
