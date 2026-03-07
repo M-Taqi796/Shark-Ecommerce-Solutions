@@ -1,8 +1,8 @@
-const Footer =() => {
+const Footer = () => {
     return (
         <section className="bg-backgroundSecondary px-20 pt-20 pb-10 text-fontSecondary max-[53.75rem]:py-6 max-sm:px-6">
             <div className="flex justify-center mb-4">
-            <img className="w-20" src="/Icon_Shark.svg" alt="" />
+                <img className="w-20" src="/Icon_Shark.svg" alt="" />
             </div>
             <div className="flex justify-between mb-20 max-[53.75rem]:flex-col">
                 <div className="flex flex-col max-[53.75rem]:justify-center max-[53.75rem]:items-center max-[53.75rem]:mb-6 gap-3">
@@ -18,7 +18,7 @@ const Footer =() => {
                 <div className="flex flex-col max-[53.75rem]:justify-center max-[53.75rem]:items-center gap-3 items-end">
                     <h2 className="text-lg text-primary">Support</h2>
                     <p className="text-center">+13479192740</p>
-                    <p className="text-center">contact@sharkecommerce.com</p>
+                    <p className="text-center">info@sharkecommercesolution.com</p>
                 </div>
             </div>
             <p className="text-center">© 2025 Shark Ecommerce Solutions  All rights reserved</p>
