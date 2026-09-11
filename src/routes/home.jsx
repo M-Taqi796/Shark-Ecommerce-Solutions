@@ -8,16 +8,16 @@ import MeetingCard from "../components/MeetingCard/meetingCard.component"
 import Services from "../components/Services/services.component"
 import Testimonials from "../components/Testimonials/testimonials.component"
 
-const Home =() => {
+const Home = () => {
     return (
         <section>
             <Header />
             <Features />
-            <Founder />
+            <Services />
             <CaseStudyCard />
             <Blog />
-            <Services />
             <MeetingCard />
+            <Founder />
             <Testimonials />
             <ContactCard />
         </section>
