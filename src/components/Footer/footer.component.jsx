@@ -6,8 +6,8 @@ const Footer = () => {
             </div>
             <div className="flex justify-between mb-20 max-[53.75rem]:flex-col">
                 <div className="flex flex-col max-[53.75rem]:justify-center max-[53.75rem]:items-center max-[53.75rem]:mb-6 gap-3">
-                    <h2 className="text-lg text-secondary">Services</h2>
-                    <p className="text-center">Amazon PPC | Listing Optimisation | SEO | Designing</p>
+                    <h2 className="text-lg text-secondary">Amazon Services</h2>
+                    <p className="text-center">Amazon Advertising | Amazon Listing Optimization | Amazon SEO | Amazon Creative Designs</p>
                     <div className="flex gap-3">
                         <img className="size-8" src="/fb.svg" alt="" />
                         <img className="size-8" src="/ig.svg" alt="" />
@@ -21,7 +21,7 @@ const Footer = () => {
                     <p className="text-center">info@sharkecommercesolution.com</p>
                 </div>
             </div>
-            <p className="text-center">© 2025 Shark Ecommerce Solutions  All rights reserved</p>
+            <p className="text-center">© 2026 Shark Ecommerce Solutions  All rights reserved</p>
         </section>
     )
 }
