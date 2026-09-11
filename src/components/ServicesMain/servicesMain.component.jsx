@@ -14,35 +14,33 @@ const Servicesmain = () => {
       <div className="flex gap-5 mt-10 max-lg:flex-col">
         <div className="flex flex-col gap-5 w-full max-lg:flex-row max-sm:flex-col">
           <ServicesCard
-            onClick ={() => navigate('/case-study/csleyo02')}
+            onClick={() => navigate('/case-study/csleyo02')}
             image="seo.svg"
             title="SEO"
             description="Increase organic rankings with proven Amazon SEO strategies tailored to your products."
+            centered
           />
           <ServicesCard
-            onClick ={() => navigate('/case-study/csleyo04')}
+            onClick={() => navigate('/case-study/csleyo04')}
             image="design.svg"
             title="Graphic Design"
             description="Create eye-catching visuals, A+ content, and storefront designs that build trust and attract more buyers."
+            centered
           />
         </div>
-        <div className="w-full justify-center bg-background shadow text-fontWhite px-5 py-8 rounded-2xl flex flex-col items-center gap-4 hover:bg-primary hover:scale-105 transition-transform duration-300 group" onClick={()=>navigate('/case-study/csleyo01')}>
-          <img className="size-28" src="ppc.svg" alt="" />
-          <h2 className="text-md font-bold text-secondary group-hover:text-fontWhite">
-            "Amazon PPC"
-          </h2>
-          <p className="text-fontSecondary text-sm text-center group-hover:text-fontWhite">
-            "Drive targeted traffic and boost sales with data-driven ad campaigns that maximise ROI and lower ACoS."
-          </p>
-          <button className="text-sm text-secondary underline cursor-pointer group-hover:text-fontWhite" onClick={()=>navigate('/case-study/csleyo01')}>
-            Get Started Now
-          </button>
-        </div>
         <ServicesCard
-          onClick ={() => navigate('/case-study/csleyo03')}
+          onClick={() => navigate('/case-study/csleyo01')}
+          image="ppc.svg"
+          title='"Amazon PPC"'
+          description='"Drive targeted traffic and boost sales with data-driven ad campaigns that maximise ROI and lower ACoS."'
+          centered
+        />
+        <ServicesCard
+          onClick={() => navigate('/case-study/csleyo03')}
           image="listing.svg"
           title="Listing optimization"
           description="Improve visibility and conversions by keyword-rich titles, compelling copy, and enhanced product content."
+          centered
         />
       </div>
     </section>
