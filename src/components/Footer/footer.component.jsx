@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex justify-between mb-20 max-[53.75rem]:flex-col">
                 <div className="flex flex-col max-[53.75rem]:justify-center max-[53.75rem]:items-center max-[53.75rem]:mb-6 gap-3">
                     <h2 className="text-lg text-secondary">Amazon Services</h2>
-                    <p className="text-center">Amazon Advertising | Amazon Listing Optimization | Amazon SEO | Amazon Creative Designs</p>
+                    <p className="text-left">Amazon Advertising <br />Amazon Listing Optimization <br />Amazon Creative Designs <br />Amazon SEO</p>
                     <div className="flex gap-3">
                         <img className="size-8" src="/fb.svg" alt="" />
                         <img className="size-8" src="/ig.svg" alt="" />
