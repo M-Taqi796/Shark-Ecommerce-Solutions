@@ -4,7 +4,7 @@ const Servicesmain = () => {
   const navigate = useNavigate();
   return (
     <section className="mb-20 mx-20 max-sm:mx-4">
-      <h1 className="text-xl text-secondary text-center max-sm:text-sxl">We Help You Rise</h1>
+      <h1 className="text-xl text-secondary text-center max-sm:text-sxl">Our Amazon Services</h1>
       <p className="text-center mx-40 text-sm max-sm:text-ssm max-[75rem]:mx-8 max-[62rem]:mx-2">
         From PPC campaigns to SEO, design, and listing optimization — we provide
         end-to-end Amazon solutions that boost visibility, increase sales, and
@@ -16,14 +16,14 @@ const Servicesmain = () => {
           <ServicesCard
             onClick={() => navigate('/case-study/csleyo02')}
             image="seo.svg"
-            title="SEO"
+            title="Amazon SEO Specialist"
             description="Increase organic rankings with proven Amazon SEO strategies tailored to your products."
             centered
           />
           <ServicesCard
             onClick={() => navigate('/case-study/csleyo04')}
             image="design.svg"
-            title="Graphic Design"
+            title="Amazon Creative Designs"
             description="Create eye-catching visuals, A+ content, and storefront designs that build trust and attract more buyers."
             centered
           />
@@ -31,14 +31,14 @@ const Servicesmain = () => {
         <ServicesCard
           onClick={() => navigate('/case-study/csleyo01')}
           image="ppc.svg"
-          title='"Amazon PPC"'
-          description='"Drive targeted traffic and boost sales with data-driven ad campaigns that maximise ROI and lower ACoS."'
+          title="Amazon Advertising"
+          description='Drive targeted traffic and boost sales with data-driven ad campaigns that maximise ROI and lower ACoS.'
           centered
         />
         <ServicesCard
           onClick={() => navigate('/case-study/csleyo03')}
           image="listing.svg"
-          title="Listing optimization"
+          title="Amazon Listing Optimization"
           description="Improve visibility and conversions by keyword-rich titles, compelling copy, and enhanced product content."
           centered
         />
